@@ -1,6 +1,6 @@
-URxvt.font: xft:Fira Code:size=15:antialias=true:hinting=true,xft:Open Sans:minspace=false
+URxvt.font: xft:Fira Code:size=15:antialias=true:hinting=true,xft:Open Sans:minspace=false,xtf:FontAwesome
 URxvt.scrollBar:false
-URxvt.letterSpace: 1
+URxvt.letterSpace: 0
 
 ! Colors
 
@@ -12,8 +12,8 @@ URxvt.foreground: #c6c6c6
 URxvt.color2: #0ad292
 URxvt.color10: #0ae292
 ! blue
-URxvt.color4  : #3465A4
-URxvt.color12 : #729FCF
+URxvt.color4  : #34f5A4
+URxvt.color12 : #72fFCF
 
 ! red
 URxvt.color1  : #CC0000
@@ -25,7 +25,7 @@ URxvt.color11 : #FCE94F
 
 ! magenta
 URxvt.color5  : #4d4d9d
-URxvt.color13 : #2c2c55
+URxvt.color13 : #2cfc55
 ! cyan
 URxvt.color6  : #06989A
 URxvt.color14 : #34E2E2

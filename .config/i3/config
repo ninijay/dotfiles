@@ -183,7 +183,7 @@ client.focused	$primary $dark $dark_light $sec_dark $primary
 bar {
 	position top
         status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
-	font pango: Fira Code 12
+	font pango: Fira Code, Font Awesome 12
 	colors{
 		background $dark
 		statusline $dark_light
@@ -198,7 +198,7 @@ bar {
 
 
 # custom shit
-exec_always compton
+exec_always compton --config ~/.config/compton.conf
 exec_always feh --randomize --bg-fill ~/Pictures/wallpapers/*
 
 # browser
@@ -222,3 +222,6 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+# Notifications
+exec_always dunst

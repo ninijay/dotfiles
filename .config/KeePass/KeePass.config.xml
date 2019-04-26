@@ -31,11 +31,11 @@
 	<Logging />
 	<MainWindow>
 		<X>3208</X>
-		<Y>775</Y>
+		<Y>91</Y>
 		<Width>930</Width>
-		<Height>342</Height>
-		<SplitterHorizontalFrac>0.8333</SplitterHorizontalFrac>
-		<SplitterVerticalFrac>0.2494577006507592</SplitterVerticalFrac>
+		<Height>1026</Height>
+		<SplitterHorizontalFrac>0.81761006289308169</SplitterHorizontalFrac>
+		<SplitterVerticalFrac>0.24886877828054296</SplitterVerticalFrac>
 		<ToolBar />
 		<EntryView />
 		<TanView />
