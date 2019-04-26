@@ -13,17 +13,19 @@ do
 	# Pictures
 	if file "$file" | grep -qE 'image|bitmap'; then
 	    mv $file ~/Pictures
-	    notify-send "$title" "$file moved to Pictures"
+	    dunstify -u low "$title" "$file moved to Pictures"
 	fi
 
 	# Music
 	if file "$file" | grep -qE 'Audio'; then
 	    mv $file ~/Music
+	    dunstify -u low "$title" "$file moved to Music"
 	fi
 
 	# Videos
 	if file "$file" | grep -qE 'Video'; then
 	    mv $file ~/Videos
+	    dunstify -u low "$title" "$file moved to Videos"
 	fi
     done
 done

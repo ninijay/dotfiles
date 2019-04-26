@@ -224,7 +224,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Notifications
-exec_always dunst
+exec_always dunst -config ~/.config/dunst/dunstrc
 
 # Cleanup
 exec_always --no-startup-id ~/.config/scripts/cleandls 
