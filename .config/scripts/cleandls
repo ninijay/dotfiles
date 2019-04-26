@@ -1,0 +1,29 @@
+#!/bin/bash
+# Script to help clean up download folder
+title="Download cleaned"
+while true
+do
+    touch /tmp/lastwatch
+    sleep 5
+    files=`find ~/Downloads/ -cnewer /tmp/lastwatch | tail -n +2` # -exec bash -c '{} \;
+    echo $files
+
+    for file in $files 
+    do
+	# Pictures
+	if file "$file" | grep -qE 'image|bitmap'; then
+	    mv $file ~/Pictures
+	    notify-send "$title" "$file moved to Pictures"
+	fi
+
+	# Music
+	if file "$file" | grep -qE 'Audio'; then
+	    mv $file ~/Music
+	fi
+
+	# Videos
+	if file "$file" | grep -qE 'Video'; then
+	    mv $file ~/Videos
+	fi
+    done
+done
