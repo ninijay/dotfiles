@@ -16,3 +16,5 @@ set ruler
 set undolevels=1024
 set backspace=indent,eol,start
 
+" Plugin Manager
+execute pathogen#infect()
