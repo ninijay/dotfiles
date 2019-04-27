@@ -8,15 +8,23 @@
 	</Meta>
 	<Application>
 		<LastUsedFile>
-			<Path />
+			<Path>../../../home/zanidd/data/security/supersecurekee.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
 			<CredSaveMode>NoSave</CredSaveMode>
 		</LastUsedFile>
 		<MostRecentlyUsed>
 			<MaxItemCount>12</MaxItemCount>
-			<Items />
+			<Items>
+				<ConnectionInfo>
+					<Path>../../../home/zanidd/data/security/supersecurekee.kdbx</Path>
+					<CredProtMode>Obf</CredProtMode>
+					<CredSaveMode>NoSave</CredSaveMode>
+				</ConnectionInfo>
+			</Items>
 		</MostRecentlyUsed>
-		<WorkingDirectories />
+		<WorkingDirectories>
+			<Item>Database@../../../home/zanidd/data/security</Item>
+		</WorkingDirectories>
 		<Start>
 			<CheckForUpdate>false</CheckForUpdate>
 			<CheckForUpdateConfigured>true</CheckForUpdateConfigured>
@@ -30,12 +38,12 @@
 	</Application>
 	<Logging />
 	<MainWindow>
-		<X>3208</X>
-		<Y>91</Y>
-		<Width>930</Width>
-		<Height>1026</Height>
+		<X>30</X>
+		<Y>107</Y>
+		<Width>1868</Width>
+		<Height>970</Height>
 		<SplitterHorizontalFrac>0.81761006289308169</SplitterHorizontalFrac>
-		<SplitterVerticalFrac>0.24886877828054296</SplitterVerticalFrac>
+		<SplitterVerticalFrac>0.24837310195227763</SplitterVerticalFrac>
 		<ToolBar />
 		<EntryView />
 		<TanView />
@@ -64,6 +72,7 @@
 		</EntryListColumnCollection>
 		<EntryListColumnDisplayOrder>0 1 2 3 4</EntryListColumnDisplayOrder>
 		<ListSorting>
+			<Column>0</Column>
 			<Order>Ascending</Order>
 		</ListSorting>
 	</MainWindow>
@@ -126,7 +135,12 @@
 		<SearchParameters>
 			<ComparisonMode>InvariantCultureIgnoreCase</ComparisonMode>
 		</SearchParameters>
-		<KeySources />
+		<KeySources>
+			<Association>
+				<DatabasePath>../../../home/zanidd/data/security/supersecurekee.kdbx</DatabasePath>
+				<Password>true</Password>
+			</Association>
+		</KeySources>
 	</Defaults>
 	<Integration>
 		<HotKeyGlobalAutoType>0</HotKeyGlobalAutoType>

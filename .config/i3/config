@@ -16,6 +16,7 @@ gaps outer 15
 font pango:Open Sans 14
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -218,13 +219,23 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym $mod+XF86AudioPlay exec playerctl play
+bindsym $mod+XF86AudioPause exec playerctl pause
+bindsym $mod+XF86AudioNext exec playerctl next
+bindsym $mod+XF86AudioPrev exec playerctl previous
+
+# Spotify related key bindings
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
 
 # Notifications
 exec_always dunst -config ~/.config/dunst/dunstrc
 
 # Cleanup
 exec_always --no-startup-id ~/.config/scripts/cleandls 
+
+# Shutdown keybinding
+bindsym Control+$alt+l exec ~/.config/scripts/shutdown_menu

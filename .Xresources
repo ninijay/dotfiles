@@ -1,6 +1,6 @@
-URxvt.font: xft:Fira Code:size=15:antialias=true:hinting=true,xft:Open Sans:minspace=false,xtf:FontAwesome
+URxvt.font: xft:Fira Code:size=15:antialias=true:hinting=true,xft:Open Sans:minspace=false
 URxvt.scrollBar:false
-URxvt.letterSpace: 0
+URxvt.letterSpace: 1
 
 ! Colors
 

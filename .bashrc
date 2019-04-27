@@ -11,6 +11,8 @@ alias ls='ls --color=auto'
 export PS1="\[\e[32m\][\[\e[m\]\[\e[37m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\] \W\[\e[32m\]]\[\e[m\]\[\e[40m\]\\$\[\e[m\] "
 alias ll="ls -l"
 alias ec="vim ~/.config/i3/config"
-alias p="sudo pacman"
+alias pacman="yay"
 
 alias config='/usr/bin/git --git-dir=/home/zanidd/.dotfiles/ --work-tree=/home/zanidd'
+
+alias mutt="neomutt"
