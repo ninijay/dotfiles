@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ffmpeg -i $1 -c:a pcm_s24le -c:v dnxhd -profile:v dnxhr_hq $2
