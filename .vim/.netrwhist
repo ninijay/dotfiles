@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/zanidd/.config/scripts'
 let g:netrw_dirhist_2='/home/zanidd/repos/traffic-lights/src/slave'
 let g:netrw_dirhist_3='/home/zanidd/.config/sakura'
+let g:netrw_dirhist_4='/home/zanidd/repos/traffic-lights/lib/src'

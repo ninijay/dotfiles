@@ -1,3 +1,0 @@
-Apr 27 01:08:21 host=asmtp.mail.hostpoint.ch tls=on auth=on user=zanidd@d3vnull.com from=zanidd@d3vnull.com recipients=zanidd@d3vnull.com errormsg='the server sent an empty reply' exitcode=EX_PROTOCOL
-Apr 27 01:40:30 host=asmtp.mail.hostpoint.ch tls=on auth=on user=zanidd@d3vnull.com from=zanidd@d3vnull.com recipients=ninijay93@gmail.com errormsg='the server sent an empty reply' exitcode=EX_PROTOCOL
-Apr 27 01:59:50 host=asmtp.mail.hostpoint.ch tls=on auth=on user=zanidd@d3vnull.com from=zanidd@d3vnull.com recipients=ninijay93@gmail.com mailsize=301 smtpstatus=250 smtpmsg='250 OK id=1hKAkw-000Jku-9B' exitcode=EX_OK

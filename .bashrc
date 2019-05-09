@@ -6,6 +6,8 @@
 [[ $- != *i* ]] && return
 
 EDITOR=vim
+export LANG=de_DE.UTF-8
+
 
 export PATH="$PATH:~/.config/scripts"
 alias ls='ls --color=auto'
